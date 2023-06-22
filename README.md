@@ -1,5 +1,6 @@
 <div align="center">
-  <h1 align="center">Hadoop Analysis</h1>
+  <img src="Assets/Hadoop_Logo.png" width="200" title="hover text">
+  <h1 align="center"> Hadoop Analysis </h1>
 </div>
 
 **Group 4 SBD-02**
