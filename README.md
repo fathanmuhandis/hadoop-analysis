@@ -84,4 +84,120 @@ To get started with Hadoop, these are the prerequisites that must be installed:
 
 ### Details are in the presentation file in the repository Above.
 
-  
+
+## How to Install Hadoop
+
+### 1. `Configure System Variables JAVA_HOME`
+NOTE:
+Tambahkan system variable baru bernama JAVA_HOME dan arahkan ke instalasi Java 
+
+### 2. `Configure New Path Variable `
+NOTE:
+1) Cek versi java dengan command "java -version" pada CMD
+2) Tambahkan di path, ke directory java dan arahkan ke folder bin
+
+### 3. `Extract hadoop-3.2.2.tar.gz as admin`
+
+### 4. `Edit \etc\hadoop\core-site.xml`
+<img src="Assets/core-site.png" width="500" title="hover text">
+
+### 5. `Edit \etc\hadoop\mapred-site.xml`
+<img src="Assets/mapred-site.png" width="500" title="hover text">
+
+### 6. `Edit \etc\hadoop\yarn-site.xml`
+<img src="Assets/yarn-site.png" width="500" title="hover text">
+
+### 7. `Create directory and subdirectory named "data"`
+<img src="Assets/file-data.png" width="500" title="hover text">
+
+### 8. `Edit \etc\hadoop\hdfs-site.xml`
+<img src="Assets/hdfs-site.png" width="500" title="hover text">
+
+### 9. `Edit \etc\hadoop\hadoop-env.cmd`
+NOTE:
+Arahkan ke directory Java masing-masing
+
+### 10. `Create HADOOP_HOME and path for /bin dan /sbin`
+
+### 11. `Move bin from additional binaries to file hadoop (local) /bin`
+NOTE:
+File yang sama di overwrite.
+
+### 12. `Verify Hadoop`
+NOTE:
+Cek versi hadoop dengan command "hadoop version" pada CMD
+
+
+## How to Run Hadoop
+
+### 1. `Format the namenode Folder`
+#### Command: hdfs namenode -format
+NOTE:
+Berguna untuk menghapus data sebelumnya pada datanode dan namenode
+
+### 2. `Open CMD`
+NOTE:
+Buka atau jalankan Command Prompt dengan **Run as Administrator**
+
+### 3. `Run Hadoop`
+1. Untuk memulai Hadoop dan daemon-nya, jalankan **start-all.cmd**
+2. Untuk memberhentikan Hadoop dan daemon-nya, jalankan **stop-all.cmd**
+3. Jika start-all.cmd dan stop-all.cmd sudah deprecated, jalankan *start-dfs.cmd* lalu **start-yarn.cmd**
+
+### 4. `Check the GUI and Resource Manager`
+Jalankan **localhost:9870** dan **localhost:8088** pada web browser
+
+### 5. `Checking the Running Hadoop Daemons`
+<img src="Assets/JPS.png" width="500" title="hover text">
+
+### 6. `Prepare the Input Text File`
+<img src="Assets/File-Input.png" width="500" title="hover text">
+
+### 7. `Moving Text File to Input Directory HDFS`
+#### hadoop fs -mkdir /input_directory
+   Untuk membuat folder input pada HDFS 
+#### hadoop fs -put “direct to file .txt” /input_directory
+   Untuk meletakkan file text ke folder input HDFS
+
+### 8. `Verify Text File is in HDFS`
+<img src="Assets/Verify-Text.png" width="500" title="hover text">
+NOTE:
+Cek pada website **localhost:9870 > utilities > browse directory > cari nama file input diawali dengan "/"**
+
+### 9. `Executing WordCount Program`
+<img src="Assets/Executing-Program.png" width="500" title="hover text">
+NOTE:
+Semakin besar ukuran file input, maka akan semakin lama waktu yang dibutuhkan untuk memproses
+
+### 10. `Check the Output`
+<img src="Assets/Output.png" width="500" title="hover text">
+<img src="Assets/Output-2.png" width="500" title="hover text">
+<img src="Assets/Output-3.png" width="500" title="hover text">
+
+
+## Hadoop vs No Hadoop
+
+Berikut beberapa hasil grafik percobaan word count menggunakan hadoop dengan tidak menggunakan hadoop (Java):
+
+### 1. `With Hadoop`
+<img src="Assets/Grafik-Hadoop.png" width="500" title="hover text">
+
+### 2. `Without Hadoop`
+<img src="Assets/Grafik-No-Hadoop.png" width="500" title="hover text">
+
+Kita juga melakukan percobaan word count hadoop menggunakan sistem operasi lain (Linux):
+
+### 1. `Test on Other Machine`
+<img src="Assets/Test-Linux.png" width="500" title="hover text">
+
+### 2. `Graph Test on Other Machine`
+<img src="Assets/Grafik-Linux.png" width="500" title="hover text">
+
+
+## References
+#### [1] “Index of /dist/hadoop/common,” Apache.org, 2023. Available: https://archive.apache.org/dist/hadoop/common/.
+#### [2] “Java Archive Downloads - Java SE 8 | Oracle Indonesia,” Oracle.com, 2019. Available: https://www.oracle.com/id/java/technologies/javase/javase8-archive-downloads.html.
+#### [3] styxnanda, “GitHub - styxnanda/winutils: winutils.exe hadoop.dll and hdfs.dll binaries for hadoop windows,” GitHub, 2023. Available: https://github.com/styxnanda/winutils.
+#### [4] “Apa Itu Hadoop? Tools Yang Banyak Digunakan Dalam Big Data – Inixindo Jogja,” Inixindo Jogja, Mar. 23, 2022. Available: https://inixindojogja.co.id/apa-itu-hadoop-big-data/.
+#### [5] SkillsBuild Training, “ How to Install Hadoop on Windows 11,” YouTube. Apr. 18, 2022. Available: https://www.youtube.com/watch?v=GNHF0DZK3xQ&t.
+#### [6] A. Devkar, “Run Wordcount Program on Hadoop-3.3.0 windows 10,” YouTube. May 13, 2021. Available: https://www.youtube.com/watch?v=nsi4nVS16lc&t.
