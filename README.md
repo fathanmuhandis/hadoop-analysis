@@ -108,7 +108,7 @@ NOTE:
 <img src="Assets/yarn-site.png" width="500" title="hover text">
 
 ### 7. `Create directory and subdirectory named "data"`
-<img src="Assets/file-data.png" width="500" title="hover text">
+<img src="Assets/file-data.png" width="300" title="hover text">
 
 ### 8. `Edit \etc\hadoop\hdfs-site.xml`
 <img src="Assets/hdfs-site.png" width="500" title="hover text">
@@ -148,21 +148,21 @@ Buka atau jalankan Command Prompt dengan **Run as Administrator**
 Jalankan **localhost:9870** dan **localhost:8088** pada web browser
 
 ### 5. `Checking the Running Hadoop Daemons`
-<img src="Assets/JPS.png" width="500" title="hover text">
+<img src="Assets/JPS.png" width="300" title="hover text">
 
 ### 6. `Prepare the Input Text File`
 <img src="Assets/File-Input.png" width="500" title="hover text">
 
 ### 7. `Moving Text File to Input Directory HDFS`
-#### hadoop fs -mkdir /input_directory
+#### `hadoop fs -mkdir /input_directory`
    Untuk membuat folder input pada HDFS 
-#### hadoop fs -put “direct to file .txt” /input_directory
+#### `Hadoop fs -put “direct to file .txt” /input_directory`
    Untuk meletakkan file text ke folder input HDFS
 
 ### 8. `Verify Text File is in HDFS`
 <img src="Assets/Verify-Text.png" width="500" title="hover text">
 NOTE:
-Cek pada website **localhost:9870 > utilities > browse directory > cari nama file input diawali dengan "/"**
+Cek pada localhost:9870 > utilities > browse directory > cari nama file input diawali dengan '/'
 
 ### 9. `Executing WordCount Program`
 <img src="Assets/Executing-Program.png" width="500" title="hover text">
