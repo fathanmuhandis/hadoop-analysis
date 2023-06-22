@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Assets/Hadoop_Logo.png" width="200" title="hover text">
+  <img src="Assets/Hadoop Logo.png" width="400" title="hover text">
   <h1 align="center"> Hadoop Analysis </h1>
 </div>
 
