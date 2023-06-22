@@ -53,13 +53,34 @@ Hive digunakan untuk MapReduce dengan interface SQL, sehingga tool ini cocok unt
 HBase adalah database yang digunakan Amazon S3 dan HDFS. Tool ini dibuat untuk memproses tabel dengan baris dalam jumlah yang sangat banyak.
 
 
+## Hadoop Advantages
+
+Berikut beberapa kelebihan dari hadoop, yaitu:
+
+### 1. `Fleksibel`
+
+Data bisa disimpan dalam format apapun, baik secara structured maupun unstructured. Hal ini memungkinkan pengguna mengakses data dari sumber manapun dengan tipe apapun.
+
+### 2. `Upgrade kapasitas`
+
+Hadoop merupakan teknologi yang memberikan solusi pada sistem tradisional. Sistem tradisional memiliki data storage yang terbatas, sementara Hadoop bisa ditingkatkan kapasitasnya, sebab framework ini bekerja secara terdistribusi.
+
+### 3. `Ketahanan tinggi`
+
+HDFS merupakan bagian dari ekosistem Hadoop, yang dikenal memiliki ketahanan tinggi dan meminimalkan risiko kegagalan baik software maupun hardware. Meskipun satu node rusak atau mengalami masalah, HDFS bisa menyediakan backup data untuk melanjutkan proses.
+
+
 ## Getting Started
 
 To get started with Hadoop, these are the prerequisites that must be installed:
 
 1. Java 8 (Recommended) / Java 11
    + https://www.oracle.com/id/java/technologies/javase/javase8-archive-downloads.html
-3. Hadoop
+3. Hadoop (Kali ini memakai versi 3.2.2)
    + https://archive.apache.org/dist/hadoop/common/
-5. Additional Binaries (Sesuaikan versi Hadoop, binary terbaru hanya sampai v3.2.2
+5. Additional Binaries (Sesuaikan versi Hadoop, versi yang dipakai kali ini adalah 3.2.2)
    + https://github.com/styxnanda/winutils
+
+### Details are in the presentation file in the repository Above.
+
+  
