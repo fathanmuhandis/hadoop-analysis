@@ -202,25 +202,25 @@ Hadoop memiliki keunggulan dalam kinerja pemrosesan data besar (big data) secara
 #### `Java`
 Penggunaan Java untuk word count cenderung lebih cocok untuk data yang relatif kecil. Kinerja Java tergantung pada implementasi kode yang ditulis, tetapi tidak memiliki kemampuan terdistribusi bawaan seperti Hadoop.
 
-### 2. `Skalabilitas:`
+### 2. `Skalabilitas`
 #### `Hadoop`
 Hadoop dirancang khusus untuk skalabilitas yang tinggi. Dengan penambahan node ke dalam cluster Hadoop, kapasitas pemrosesan dapat ditingkatkan sesuai kebutuhan yang mana memungkinkan Hadoop untuk mengatasi data yang sangat besar dan kompleks.
 #### `Java`
 Skalabilitas Java terbatas pada sumber daya yang tersedia di IDE tempat program dijalankan. Pengolahan data terbatas pada kapasitas mesin tersebut dan tidak secara otomatis terdistribusi ke beberapa node seperti Hadoop.
 
-### 3. `Kompleksitas Pengembangan:`
+### 3. `Kompleksitas Pengembangan`
 #### `Hadoop`
 Implementasi word count dengan Hadoop memerlukan penulisan kode yang melibatkan konfigurasi job, pembuatan fungsi mapper dan reducer, serta penanganan input dan output. Hal ini memerlukan pemahaman yang baik tentang framework Hadoop dan memerlukan waktu dan usaha yang lebih.
 #### `Java`
 Implementasi word count dengan Java  lebih sederhana karena hanya perlu menulis kode Java untuk membaca teks, memisahkan kata, dan menghitung kemunculannya. Cara ini lebih mudah dipahami dan memerlukan waktu pengembangan yang lebih singkat.
 
-### 4. `Infrastruktur:`
+### 4. `Infrastruktur`
 #### `Hadoop`
 Penggunaan Hadoop memerlukan infrastruktur cluster yang terdiri dari beberapa node, dimana membutuhkan konfigurasi dan penyiapan yang cermat serta pemahaman tentang pengelolaan cluster Hadoop.
 #### `Java`
 Penggunaan Java tidak memerlukan infrastruktur khusus, dimana pengguna dapat menjalankan program Java pada IDE yang diinginkan.
 
-Pilihan antara Hadoop dan Java standalone untuk word count bergantung pada kebutuhan dan skala data. Pilih Hadoop jika memiliki data besar dan kompleks, serta membutuhkan pemrosesan terdistribusi dan skalabilitas yang tinggi. Namun, jika data yang olah relatif kecil dan tidak memerlukan pemrosesan terdistribusi, penggunaan Java standalone akan lebih sederhana dan lebih efisien.
+Pilihan antara Hadoop dan Java untuk word count bergantung pada kebutuhan dan skala data. Pilih Hadoop jika memiliki data besar dan kompleks, serta membutuhkan pemrosesan terdistribusi dan skalabilitas yang tinggi. Namun, jika data yang olah relatif kecil dan tidak memerlukan pemrosesan terdistribusi, penggunaan Java standalone akan lebih sederhana dan lebih efisien.
 
 ## References
 #### [1] “Index of /dist/hadoop/common,” Apache.org, 2023. Available: https://archive.apache.org/dist/hadoop/common/.
